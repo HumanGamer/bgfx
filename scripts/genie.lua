@@ -610,3 +610,6 @@ if _OPTIONS["with-tools"] then
 	dofile "geometryc.lua"
 	dofile "geometryv.lua"
 end
+
+-- build brtshaderc (shaderc in static library version)
+dofile "brtshaderc.lua"
