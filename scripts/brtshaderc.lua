@@ -18,6 +18,7 @@ project "brtshaderc"
     files {
         path.join(BGFX_DIR, "tools/brtshaderc/brtshaderc.cpp"),
         path.join(BGFX_DIR, "tools/brtshaderc/brtshaderc.h"),
+        path.join(BGFX_DIR, "tools/brtshaderc/brtshaderc_spirv.cpp"),
     }
 
 --project "spirv-opt"
@@ -640,7 +641,11 @@ project "brtshaderc"
 	}
 
 	files {
-		path.join(BGFX_DIR, "tools/shaderc/**.cpp"),
+		path.join(BGFX_DIR, "tools/shaderc/shaderc.cpp"),
+		path.join(BGFX_DIR, "tools/shaderc/shaderc_glsl.cpp"),
+		path.join(BGFX_DIR, "tools/shaderc/shaderc_hlsl.cpp"),
+		path.join(BGFX_DIR, "tools/shaderc/shaderc_metal.cpp"),
+		path.join(BGFX_DIR, "tools/shaderc/shaderc_pssl.cpp"),
 		path.join(BGFX_DIR, "tools/shaderc/**.h"),
 		path.join(BGFX_DIR, "src/vertexlayout.**"),
 		path.join(BGFX_DIR, "src/shader**"),
