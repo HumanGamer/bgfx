@@ -174,8 +174,10 @@ namespace shaderc
                 case bgfx::RendererType::Gnm:          //!< GNM
                     break;
                 case bgfx::RendererType::Metal:        //!< Metal
+                    options.profile = "metal";
                     break;
                 case bgfx::RendererType::OpenGLES:     //!< OpenGL ES 2.0+
+                    options.profile = "320_es";
                     break;
                 case bgfx::RendererType::OpenGL:       //!< OpenGL 2.1+
                 {
@@ -186,6 +188,7 @@ namespace shaderc
                 }
                     break;
                 case bgfx::RendererType::Vulkan:       //!< Vulkan
+                    options.profile = "spirv";
                     break;
             };
         }
